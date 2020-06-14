@@ -76,10 +76,7 @@ body {
       padding: 0;
   }
 
+  /* THIS WAS FOR THE BOOTSTRAP EXPERIEMENT.  */
   .form-control {
       height: auto;
   }
-
-  /* .button i {
-      text-align: center;
-  } */
