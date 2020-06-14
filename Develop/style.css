@@ -70,6 +70,16 @@ body {
     transition: all .3s ease-in-out;
   }
 
+
+/* MADE THESE EXTRA  */
   .nopadding {
       padding: 0;
   }
+
+  .form-control {
+      height: auto;
+  }
+
+  /* .button i {
+      text-align: center;
+  } */
