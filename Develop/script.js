@@ -34,5 +34,16 @@ $("textarea").each(function () {
 });
 
 // NEED TO STORE INPUT IN LOCAL STORAGE 
+$('button').on("click",function(){
+    localStorage.setItem("9", nine.val());
+    localStorage.setItem("10", ten.val());
+    localStorage.setItem("11", eleven.val());
+    localStorage.setItem("12", twelve.val());
+    localStorage.setItem("13", one.val());
+    localStorage.setItem("14", two.val());
+    localStorage.setItem("15", three.val());
+    localStorage.setItem("16", four.val());
+    localStorage.setItem("17", five.val());
+});
 
 // NEED TO GETITEM FROM LOCAL STORAGE 
