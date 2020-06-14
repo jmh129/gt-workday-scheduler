@@ -2,7 +2,7 @@
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY, h:mm:ss a'));
 
 // CURRENT HOUR - used to update time slots 
-var currentHour = moment('HH');
+var currentHour = parseInt(moment().format("HH"));
 console.log(currentHour);
 
 
