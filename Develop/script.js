@@ -17,7 +17,6 @@ $("#currentDay").text(
 
 // CURRENT HOUR - used to update time slots
 var currentHour = parseInt(moment().format("HH"));
-console.log(currentHour);
 
 // FUNCTION TO RECOGNIZE WHAT TIME IT IS AND UPDATE THE TIMESLOTS.
 $("textarea").each(function () {
@@ -33,3 +32,7 @@ $("textarea").each(function () {
     $(this).addClass("future");
   }
 });
+
+// NEED TO STORE INPUT IN LOCAL STORAGE 
+
+// NEED TO GETITEM FROM LOCAL STORAGE 
