@@ -25,7 +25,7 @@ $("textarea").each(function () {
   var timeSlot = parseInt($(this).attr("id"));
   if (timeSlot < currentHour) {
     $(this).addClass("past");
-  } else if (timeSlot === hour) {
+  } else if (timeSlot === currentHour) {
     $(this).removeClass("past");
     $(this).addClass("present");
   } else {
