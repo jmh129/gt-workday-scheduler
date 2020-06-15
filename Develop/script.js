@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 // ESTABLISH VARIABLES FROM CURRENT HTML
 var nine = $("#9");
 var ten = $("#10");
@@ -9,7 +11,6 @@ var three = $("#15");
 var four = $("#16");
 var five = $("#17");
 
-
 // GET CURRENT TIME AND DATE
 $("#currentDay").text(
   moment().format("dddd MMMM Do YYYY, h:mm:ss a")
@@ -17,6 +18,7 @@ $("#currentDay").text(
 
 // CURRENT HOUR - used to update time slots
 var currentHour = parseInt(moment().format("HH"));
+console.log(currentHour);
 
 // FUNCTION TO RECOGNIZE WHAT TIME IT IS AND UPDATE THE TIMESLOTS.
 $("textarea").each(function () {
@@ -33,7 +35,7 @@ $("textarea").each(function () {
   }
 });
 
-// NEED TO STORE INPUT IN LOCAL STORAGE 
+// SETTING ITEMS TO LOCAL STORAGE 
 $('button').on("click",function(){
     localStorage.setItem("9", nine.val());
     localStorage.setItem("10", ten.val());
@@ -46,4 +48,14 @@ $('button').on("click",function(){
     localStorage.setItem("17", five.val());
 });
 
-// NEED TO GETITEM FROM LOCAL STORAGE 
+// GETTING ITEMS FROM LOCAL STORAGE
+    $("9").append(localStorage.getItem("9"));
+    $("10").append(localStorage.getItem("10"));
+    $("11").append(localStorage.getItem("11"));
+    $("12").append(localStorage.getItem("12"));
+    $("13").append(localStorage.getItem("1"));
+    $("14").append(localStorage.getItem("2"));
+    $("15").append(localStorage.getItem("3"));
+    $("16").append(localStorage.getItem("4"));
+    $("17").append(localStorage.getItem("5"));
+});

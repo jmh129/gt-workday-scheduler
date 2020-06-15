@@ -80,3 +80,7 @@ body {
   .form-control {
       height: auto;
   }
+
+  .col-sm-1 {
+    padding-left: 0px;
+  }
