@@ -76,11 +76,6 @@ body {
       padding: 0;
   }
 
-  /* THIS WAS FOR THE BOOTSTRAP EXPERIEMENT.  */
-  .form-control {
-      height: auto;
-  }
-
   .col-sm-1 {
     padding-left: 0px;
   }
